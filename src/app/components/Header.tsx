@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import "./header.css";
+import AppBtn from "./AppBtn";
+import Nav from "./Nav";
 export default function Header() {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
@@ -25,7 +27,8 @@ export default function Header() {
         <h1 className="logo me-auto me-lg-0">
           <a href="/">Caglar Restaurant</a>
         </h1>
-        
+        <Nav></Nav>
+        <AppBtn name="İletişime Geç" />
       </div>
     </header>
   );
