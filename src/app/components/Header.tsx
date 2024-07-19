@@ -25,7 +25,7 @@ export default function Header() {
     >
       <div className="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
         <h1 className="logo me-auto me-lg-0">
-          <a href="/">Caglar Restaurant</a>
+          <a href="/">akcag Restaurant</a>
         </h1>
         <Nav></Nav>
         <AppBtn name="İletişime Geç" />
