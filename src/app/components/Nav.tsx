@@ -24,7 +24,7 @@ export default function Nav() {
         setScroll(window.scrollY)
       });
     };
-  },[scroll])
+  },[scroll]);
 
   return (
     <nav
