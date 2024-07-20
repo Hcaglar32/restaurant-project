@@ -3,12 +3,20 @@ import React, { useEffect } from "react";
 import "./hero.css";
 import HeroBtn from "../components/HeroBtn";
 import GLightbox from "glightbox";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 export default function Hero() {
   useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animasyonun süresi
+    });
+
     new GLightbox({
       selector: ".glightbox",
     });
   }, []);
+
   return (
     <section id="hero" className="d-flex align-items-center">
       <div
@@ -23,11 +31,11 @@ export default function Hero() {
             </h1>
             <h2>Kaliteli yemeğin 10 yıllık adresi</h2>
             <div className="btns">
-            <HeroBtn name="Menümüz" target="menu" />
-            <HeroBtn name="İletişime geç" target="book-a-table" />
+              <HeroBtn name="Menümüz" target="menu" />
+              <HeroBtn name="İletişime geç" target="book-a-table" />
+            </div>
           </div>
-          </div>
-          
+
           <div
             className="col-lg-4 d-flex align-items-center justify-content-center position-relative"
             data-aos="zoom-in"
